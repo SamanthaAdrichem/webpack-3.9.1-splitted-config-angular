@@ -7,14 +7,14 @@ Note that the html-loader does not support double quotes (") on image src attrib
 
 # Dev vs Production #
 Sourcemaps in dev are included in the .css file, whilst in production hidden version is used, which you can the for example deploy to rollbar
+
 Production is also minified
 
 # Startup #
 
-for dev with server: npm run dev-server
-for dev without server:
-  build: npm run dev
-  build & watch: npm run dev-watch
-  
-for production: npm run production
+* for dev with server: npm run dev-server
+* for dev without server:
+** build: npm run dev
+** build & watch: npm run dev-watch
+* for production: npm run production
 
