@@ -13,7 +13,7 @@ export const templateLoader = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: srcPath + '/index.ejs',
+			template: srcPath + '/index.html',
 			chunksSortMode: packageSort(['polyfills', 'vendor', 'app'])
 		})
 	]
