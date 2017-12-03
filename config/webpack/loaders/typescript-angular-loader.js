@@ -9,12 +9,7 @@ export const typescriptAngularLoader = {
 					'awesome-typescript-loader?configFileName=' + configPath + '/tsconfig.json',
 					'angular2-template-loader'
 				]
-			},
-			/* Embed files. */
-			{
-				test: /\.html$/,
-				use: 'raw-loader'
-			},
+			}
 		]
 	}
 };
