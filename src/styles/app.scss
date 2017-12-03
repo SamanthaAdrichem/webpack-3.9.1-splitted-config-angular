@@ -1,3 +1,10 @@
-.class {
-	border: solid 1px red;
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Indie+Flower');
+
+*,
+.h-font-default {
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+.h-font-writing {
+	font-family: 'Indie Flower', cursive;
 }
