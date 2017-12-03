@@ -17,3 +17,7 @@ After cloning run npm install to install the packages.
 * for dev without server just build: npm run dev
 * for dev without server build & watch: npm run dev-watch
 * for production: npm run production
+
+# Todo #
+* Production is missing .htaccess
+* Production seems to break on routerLink, whilst dev works.
