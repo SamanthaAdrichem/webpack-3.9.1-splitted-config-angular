@@ -11,6 +11,7 @@ Sourcemaps in dev are included in the .css file, whilst in production hidden ver
 Production is also minified
 
 # Startup #
+After cloning run npm install to install the packages.
 
 * for dev with server: npm run dev-server
 * for dev without server just build: npm run dev
