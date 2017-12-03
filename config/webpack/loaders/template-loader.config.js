@@ -3,6 +3,14 @@ import { srcPath } from './../../vars/paths.config';
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 export const templateLoader = {
+	module: {
+		rules: [
+			{
+				test: /\.html$/,
+				use: [ 'html-loader?root=' + srcPath ]
+			}
+		]
+	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: srcPath + '/index.ejs',
