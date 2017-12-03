@@ -13,8 +13,6 @@ Production is also minified
 # Startup #
 
 * for dev with server: npm run dev-server
-* for dev without server:
-** build: npm run dev
-** build & watch: npm run dev-watch
+* for dev without server just build: npm run dev
+* for dev without server build & watch: npm run dev-watch
 * for production: npm run production
-
