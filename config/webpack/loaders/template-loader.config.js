@@ -7,7 +7,22 @@ export const templateLoader = {
 		rules: [
 			{
 				test: /\.html$/,
-				use: [ 'html-loader?root=' + srcPath ]
+				use: [
+					{
+						loader: 'html-loader',
+						options: {
+							root: srcPath,
+							removeComments: true,
+							collapseWhitespace: true,
+
+							// angular 2 templates break if these are omitted
+							removeAttributeQuotes: false,
+							keepClosingSlash: true,
+							caseSensitive: true,
+							conservativeCollapse: true,
+						}
+					}
+				]
 			}
 		]
 	},

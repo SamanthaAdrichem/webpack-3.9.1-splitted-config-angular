@@ -11,7 +11,10 @@ export const fileLoader = {
 				use: [
 					{
 						loader: 'file-loader',
-						options: { name: '[path][name].[ext]?[hash]', context: srcPath }
+						options: {
+							name: '[path][name].[ext]?[hash]',
+							context: srcPath
+						}
 					}
 				]
 			}

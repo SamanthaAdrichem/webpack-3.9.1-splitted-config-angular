@@ -6,8 +6,13 @@ export const typescriptAngularLoader = {
 			{
 				test: /\.ts$/,
 				use: [
-					'awesome-typescript-loader?configFileName=' + configPath + '/tsconfig.json',
-					'angular2-template-loader'
+					{
+						loader: 'awesome-typescript-loader',
+						options: {
+							configFileName: configPath + '/tsconfig.json',
+						}
+					},
+					{ loader: 'angular2-template-loader' }
 				]
 			}
 		]

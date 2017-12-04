@@ -21,6 +21,7 @@ const postCssOptions = {
 	},
 	sourceMap: true
 };
+
 const sassOptions = {
 	includePaths: [
 		srcPath + '/styles'
@@ -29,7 +30,7 @@ const sassOptions = {
 };
 
 export const stylesLoader = {
-	devtool: APP_ENV === 'development' ? 'source-map' : 'hidden-source-map',
+	devtool: APP_ENV === 'development' ? 'source-map' : 'source-map',
 	module: {
 		rules: [
 			{
