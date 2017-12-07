@@ -35,6 +35,11 @@ commonConfig = {
 	plugins: [
 		new CleanWebpackPlugin( pathsToClean, cleanOptions ),
 		new webpack.ContextReplacementPlugin(/\@angular(\\|\/)core(\\|\/)esm5/, srcPath),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: ["polyfills", "vendor"],
+			filename: "scripts/[name].js?[hash]",
+			minChunks: Infinity
+		})
 	]
 };
 
