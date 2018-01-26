@@ -7,17 +7,19 @@ const cssOptions = {
 };
 
 const postCssOptions = {
-	autoprefixer: {
-		browsers: [
-			// for more see: https://github.com/ai/browserslist#queries
-			'last 3 versions',
-			'last 15 Chrome versions',
-			'last 5 iOS versions',
-			'last 5 Android versions',
-		]
-	},
 	config: {
-		path: configPath + '/postcss.config.js'
+		path: configPath + '/postcss.config.js',
+		ctx: {
+			autoprefixer: {
+				browsers: [
+					// for more see: https://github.com/ai/browserslist#queries
+					'last 3 versions',
+					'last 15 Chrome versions',
+					'last 5 iOS versions',
+					'last 5 Android versions',
+				]
+			}
+		}
 	},
 	sourceMap: true
 };
@@ -30,7 +32,6 @@ const sassOptions = {
 };
 
 export const stylesLoader = {
-	devtool: APP_ENV === 'development' ? 'source-map' : 'source-map',
 	module: {
 		rules: [
 			{
