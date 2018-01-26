@@ -1,5 +1,4 @@
 import { srcPath } from './../../vars/paths.config';
-import { APP_ENV } from './../../vars/environment.config';
 import { configPath } from '../../vars/paths.config';
 
 const cssOptions = {
